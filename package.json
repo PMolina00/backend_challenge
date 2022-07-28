@@ -1,0 +1,36 @@
+{
+  "name": "backend",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && mocha ./tests/api.test.js --exit",
+    "start": "node ./src/app.js",
+    "dev": "nodemon ./src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.18.1"
+  },
+  "devDependencies": {
+    "chai": "4.3.6",
+    "mocha": "8.0.0",
+    "nodemon": "2.0.19",
+    "standard": "17.0.0",
+    "supertest": "6.2.4"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json",
+    "env": {
+      "mocha": true
+    }
+  },
+  "standard": {
+    "env": [
+      "mocha"
+    ]
+  }
+}
